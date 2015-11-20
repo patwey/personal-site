@@ -1,7 +1,19 @@
-.center {
+.center-align {
   margin: auto;
-  width: 15%;
+  width: 60%;
 }
-.content {
-  padding: 8%;
+.center-text {
+  text-align: center;
+}
+.container {
+  padding: 18%;
+}
+#headshot {
+  width: 200px;
+  height: 200px;
+}
+#about-me {
+  margin: auto;
+  width: 80%;
+  font-size: 18px;
 }

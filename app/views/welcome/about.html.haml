@@ -1,0 +1,31 @@
+.content.center-align
+  %h1.title.center-text About
+
+  .bio
+    .headshot.center-text
+      %img#headshot{ src: '/images/headshot.jpg' }
+
+    %br
+    #about-me
+      %p
+        I'm currently a student at the Turing School of Software and Design
+        in Denver, Colorado.
+      %p
+        Before Turing, I spent much of my early life in Pittsburgh, eventually
+        moving to Boston to attend Boston College. In 2013, I graduated in from
+        the Caroll School of Management with a concentration in Information
+        Systems.
+      %p
+        I then spent two years playing professional hockey in the
+        Washington Capitals organization before deciding to turn my
+        programming hobby into a full time pursuit.
+
+  %br
+  .links.center-text
+    = link_to 'Email', 'mailto:patrickwey@gmail.com'
+    |
+    = link_to 'Github', 'https://github.com/patwey'
+    |
+    = link_to 'LinkedIn', 'https://linkedin.com/in/patrickwey'
+  %br
+  .center-text= link_to 'Return to Homepage', root_path

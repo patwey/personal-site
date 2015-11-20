@@ -1,8 +1,9 @@
-.content
-  %h1.name.center Pat Wey
+.content.container.center-align.center-text
+  %h1.name Pat Wey
 
-  .links.center
-    %ol
-      %li= link_to 'About'
-      %li= link_to 'Blog'
-      %li= link_to 'Projects'
+  .links
+    = link_to 'About', about_path
+    %br
+    = link_to 'Blog'
+    %br
+    = link_to 'Projects'
