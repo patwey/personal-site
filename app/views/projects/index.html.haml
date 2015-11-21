@@ -1,0 +1,6 @@
+.content
+  %h1.title Projects
+
+  .projects
+    - @projects.each do |project|
+      = render partial: "project", locals: { project: project }
