@@ -1,6 +1,10 @@
-%h4.name= project.name
+%h3.name= project.name
 
 %img.thumbnail{ src: project.image_path }
 
 .description
   %p= project.description
+
+.links
+  = link_to "Website", project.website_url
+  = link_to "Github", project.github_url

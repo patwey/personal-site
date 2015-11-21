@@ -1,6 +1,10 @@
-.content
-  %h1.title Projects
+.content.center-align
+  %h1.title.center-text Projects
 
-  .projects
+  .projects.center-text
     - @projects.each do |project|
-      = render partial: "project", locals: { project: project }
+      = render partial: 'project', locals: { project: project }
+      %br
+
+  %br
+  .center-text= link_to_homepage

@@ -9,3 +9,13 @@ body {
 h1 {
   font-family: 'Georgia'
 }
+.center-align {
+  margin: auto;
+  width: 60%;
+}
+.center-text {
+  text-align: center;
+}
+.container {
+  padding: 18%;
+}
