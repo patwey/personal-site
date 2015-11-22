@@ -9,6 +9,10 @@ body {
 h1 {
   font-family: 'Georgia';
 }
+a {
+  text-decoration: none;
+  color: #666699;
+}
 .title {
   font-style: italic;
 }
