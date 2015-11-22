@@ -25,3 +25,6 @@ h1 {
 .content {
   margin-bottom: 3%;
 }
+.flash-error {
+  color: red;
+}

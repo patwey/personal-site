@@ -11,11 +11,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'unicorn'
 gem 'haml'
 gem 'factory_girl_rails'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'capybara'
+  gem 'launchy'
 end
 
 group :development do
