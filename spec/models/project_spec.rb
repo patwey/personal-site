@@ -19,7 +19,11 @@ describe Project do
 
     it 'is unique' do
       project.save
-      repeated_project = Project.new(name: 'project')
+      repeated_project = Project.new(name: 'project',
+                                     description: 'different description',
+                                     image_path: 'different_image.jpg',
+                                     website_url: 'differentwebsite.com',
+                                     github_url: 'github.com/differenturl')
 
       expect(repeated_project).not_to be_valid
     end
