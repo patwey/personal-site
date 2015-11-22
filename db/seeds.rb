@@ -8,5 +8,3 @@ Project.create(name: 'Headcount',
                Colorado public schools.',
                image_path: '/images/headcount.png',
                github_url: 'https://github.com/jasonpilz/Headcount')
-Post.create(title: 'Hello World',
-            body: 'Hello, world. This is the body of my post.')

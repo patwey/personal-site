@@ -4,6 +4,8 @@
   %h1.title.center-text Blog
 
   .posts.center-align
+    .center-text
+      Pat has thoughts. They are coming soon.
     - @posts.each do |post|
       .center-align
         = render partial: 'post', locals: { post: post }
