@@ -6,5 +6,7 @@
   %p= project.description
 
 .links
-  = link_to "Website", project.website_url
+  - if project.has_website?
+    = link_to "Website", project.website_url
+    |
   = link_to "Github", project.github_url

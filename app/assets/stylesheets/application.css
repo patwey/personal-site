@@ -7,7 +7,10 @@ body {
   font-family: 'Courier New';
 }
 h1 {
-  font-family: 'Georgia'
+  font-family: 'Georgia';
+}
+.title {
+  font-style: italic;
 }
 .center-align {
   margin: auto;
