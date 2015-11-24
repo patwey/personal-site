@@ -1,0 +1,15 @@
+- provide :title, 'Posts'
+
+.content
+  %h1.title.center-text Posts
+
+  .center-text= link_to 'Create New Blog Post', new_admin_post_path
+
+  .posts.center-align
+    - @posts.each do |post|
+      .center-align
+        = render partial: 'post', locals: { post: post }
+        %br
+
+  %br
+  .center-text= link_to_dashboard

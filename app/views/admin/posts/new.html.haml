@@ -1,0 +1,13 @@
+- provide :title, 'New Post'
+
+%h1.title Create New Blog Post
+
+= form_for @post, url: admin_posts_path do |f|
+  = f.label :title
+  = f.text_field :title
+  %br
+  = f.label :body
+  = f.text_area :body
+  %br
+  %br
+  = f.submit 'Create Post'

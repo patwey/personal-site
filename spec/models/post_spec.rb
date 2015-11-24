@@ -31,4 +31,16 @@ describe Post do
       expect(bodyless_post).not_to be_valid
     end
   end
+
+  describe '#slug' do
+    it 'is set before a post is saved' do
+      before_save = post.slug
+
+      post.save
+      saved_post = Post.all.first
+
+      expect(before_save).to be_nil
+      expect(saved_post.slug).to eq 'hello-world'
+    end
+  end
 end
