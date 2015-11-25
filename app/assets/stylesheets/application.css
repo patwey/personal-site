@@ -32,3 +32,7 @@ a {
 .flash-error {
   color: red;
 }
+.posts {
+  margin: auto;
+  width: 70%;
+}

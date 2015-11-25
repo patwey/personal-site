@@ -3,22 +3,22 @@ require 'rails_helper'
 describe 'projects/_project.html.haml' do
   context 'when the project has a website' do
     it 'displays the website url' do
-      skip('Figure out how to write a view spec')
-      assign(:project, build(:project, website_url: 'mysite.com'))
+      # assign assigns a factory to a particular class?
+      project = build(:project_with_site)
 
-      render
+      render partial: 'project', locals: { project: project }
 
-      expect(rendered).to have_link 'Website', href: 'mysite.com'
+      expect(rendered).to have_link 'Website', href: project.website_url
     end
   end
 
   context 'when the project has no website' do
     it 'does not display a website url' do
-      skip('Figure out how to write a view spec')
-      assign(:project, build(:project, website_url: nil))
+      project = build(:project)
 
-      render
+      render partial: 'project', locals: { project: project }
 
+      expect(rendered).to have_link 'Github', href: project.github_url
       expect(rendered).not_to have_link 'Website'
     end
   end
